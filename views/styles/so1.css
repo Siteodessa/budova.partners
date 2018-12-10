@@ -933,7 +933,7 @@ span.unbordered.bordereds {
 }
 
 .singlepage span.phone_icon {
-    height: 54px;
+    height: 60px;
 }
 
 .planning_tab ul.nav.nav-pills li:hover a {
@@ -2891,7 +2891,7 @@ span.big.circle {
 .panel_col .button_c {
     margin: 20px 0;
     width: 100%;
-    height: 54px;
+    height: 60px;
 }
 .panel_col {
     -ms-flex-pack: center;
@@ -4095,5 +4095,5 @@ iframe {
 }
 
 .button_c {
-    height: 54px;
+    height: 60px;
 }
