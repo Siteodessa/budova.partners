@@ -10,8 +10,8 @@ function remove_quotation_at_end(a){
     <div class="col">
       <div class="section_title text-center desc">
         <h3><%= d.title %></h3>
-        <span class="section_subtitle"><%- remove_quotation_at_end(d.content) %></span>
       </div>
+      <span class="section_subtitle"><%- remove_quotation_at_end(d.content) %></span>
     </div>
   </div>
   <div class="row featured_row">
@@ -41,9 +41,9 @@ $('.tab_active').ready(function(){
 
       $(document).on('click', '.single_navigation  a[href^="#"]', function (event) {
         event.preventDefault();
-
+console.log($($.attr(this, 'href')).offset().top);
         $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
+            scrollTop: ($($.attr(this, 'href')).offset().top - 120)
         }, 500);
     });
     </script>

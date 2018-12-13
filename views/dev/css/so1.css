@@ -2882,8 +2882,6 @@ span.big.circle {
     margin: 0;
     height: 100%;
     width: 70px;
-    min-height: 100%;
-    display: block;
 }
 .planning_tab span.phone_icon img {
     margin: 12px 27%;
@@ -2891,7 +2889,6 @@ span.big.circle {
 .panel_col .button_c {
     margin: 20px 0;
     width: 100%;
-    height: 54px;
 }
 .panel_col {
     -ms-flex-pack: center;
@@ -2926,7 +2923,7 @@ span.big.circle {
     color: #fff;
     padding: 13px 63px 12px;
     border: none;
-    height: 100%;
+    height: 54px;
     font-size: 20px;
 }
 .adv span.phone_icon {
@@ -3515,6 +3512,9 @@ div.work_time {
 	}
 }
 @media only screen and (max-width: 576px) and (min-width: 100px){
+	.dd-header-title{
+		margin: 2px 20px 0 10px;
+	}
 	.col-md-12 .el_card{
 		flex-direction:column
 	}
@@ -3538,13 +3538,14 @@ div.work_time {
     padding: 12px 24px;
 }
 	.cardsearch input{
-	width: 40vw;
+	width: 60vw;
+	margin-left: 40px;
 }
 	.dd-wrapper{
 		min-width: 42%;
-		margin: 6px auto;
+		margin: 4px auto;
 		max-width: 42%;
-		flex: 0 0 47% !important;
+		flex: 0 0 48% !important;
 		max-width: 50% !important;
 	}
 .dropdown_menu{
@@ -3556,11 +3557,11 @@ div.work_time {
 	.dd-header span.gray_icon {
     height: 44px;
     display: block;
-    width: 40px;
+    width: 30px;
     margin: -1px 0 0;
-    padding: 1px 9px 6px;
+    padding: 1px 7px 6px;
     line-height: 40px;
-    MIN-width: 40px;
+    MIN-width: 30px;
 }  	.dd-header  {
     line-height: 20px;
 
@@ -3579,7 +3580,7 @@ div.work_time {
 }
 .homepage .swiper-slide.swiper-slide-active + div img{
 	border: none;
-	transform: scale(3.154) translate(0%,4%);
+	transform: scale(3.454) translate(0%,4%);
 }
 .installments_icon{
 	/* display:block; */
@@ -4094,6 +4095,10 @@ iframe {
     width: 100%;
 }
 
-.button_c {
-    height: 54px;
+.row.mobm0 {
+    margin: 0;
+}
+
+.dd-header-title {
+    width: 100%;
 }

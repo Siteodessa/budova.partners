@@ -52,7 +52,7 @@ homepage('/', 'pages/home.ejs', cf)
           note_model.find().then(notes => {
               d  = null;  notes.forEach(elem => { if (elem.page_link == req.params.page_link) { d = elem;} });
             note_model.find({title: d.title}).then(notes => {   let note = notes[0]; note.counter++; note_model.findByIdAndUpdate(note.id, {counter:note.counter}, {new: true})    .then(note => { console.log(d.title + ' was visited ' + note.counter + ' times'); }); }).catch(err => { console.log(err); })
-              res.render('pages/news_single.ejs', {d: d, sitedata: sitedata, content: notes})
+              res.render('pages/news_single.ejs', {d: d, sitedata: sitedata, sitedata_new: cf.sitedata.project, content: notes})
             }).catch(err => { res.send({ message: err.message || "Some error occurred while retrieving notes." });
           });
      });
@@ -66,13 +66,13 @@ homepage('/', 'pages/home.ejs', cf)
       Note_m.find().then(notes => {
         d = null; notes.forEach(elem => { if (elem.page_link == req.params.page_link) { d = elem; } });
         Note_m.find({title: d.title}).then(notes => { let note = notes[0]; note.counter++; Note_m.findByIdAndUpdate(note.id, {counter:note.counter}, {new: true})    .then(note => { console.log(d.title + ' was visited ' + note.counter + ' times'); }); }).catch(err => { console.log(err); })
-
         Sitedata_m.find().then(sitedata => {
         Review_m.find().then(reviews => {
               app.use(express.static('views'));
               res.status(200).render(d.template_link, {
                 content: notes,
                 sitedata: sitedata,
+                sitedata_new: cf.sitedata.project,
                 reviews: reviews,
               }); // res render
         })

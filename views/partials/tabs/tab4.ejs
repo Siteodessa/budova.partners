@@ -19,7 +19,7 @@
 <div class="panel_col flex_col">
 <div class="panel collapsable closed">
   <h4 class="underlined">Планировки</h4>
-<ul class="nav nav-pills"  id="lgallery">
+<ul class="nav nav-pills" >
   <% i = 0; JSON.parse(d.layouts).forEach(elem => {  %>
   <%  i ++; let active, active1; if (i == 1) { active = 'in active'; activelink = 'tab_active'; } else { active = activelink = ''}  ;   %>
   <%   if (elem.text !== undefined) { %>
@@ -33,7 +33,7 @@
       <span class="phone_icon"><img src="/images/phone.png"></span>
     </div>
     </div>
-<div class="tab-content">
+<div class="tab-content" id="lgallery">
   <% i = 0; JSON.parse(d.layouts).forEach(elem => { i ++; let active; if (i == 1) { active = 'in active' } else { active = ''};if (elem.media !== undefined && elem.media !== '') {  %>
       <div id="stab_<%= i %>" class="tab-pane fade <%= active %>"> <div class="plannimg"> <img src="/uploads/<%= elem.media %>" /> </div> </div>
   <%  } }); %>
