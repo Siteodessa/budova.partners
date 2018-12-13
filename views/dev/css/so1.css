@@ -34,6 +34,34 @@ form#budova_contact_form .col-md-9 {
     font-size: 11px;
     margin: 0 6px;
 }
+.related .panel.bordered {
+    background: #3c85cd;
+}
+
+.related .panel.bordered h4, .related .panel.bordered span, .related .panel.bordered p, .related .panel.bordered a {
+    color: #fff;
+}
+
+.related .panel.bordered path {
+    fill: #fff;
+}
+
+
+.related .panel.bordered:hover {
+    background: #fff;
+}
+
+.related .panel.bordered:hover h4, .related .panel.bordered:hover span, .related .panel.bordered:hover p, .related .panel.bordered:hover a {
+    color: #3c85cd;
+}
+
+.related .panel.bordered:hover path {
+    fill: #3c85cd;
+}
+
+
+
+
 .about .panel.bordered a.read_more {
     background: transparent;
     color: #3d85cd;
@@ -864,8 +892,7 @@ span.unbordered.bordereds {
 .contacts .row .row.main .jc {
     width: 100%;
 }
-.contacts .vertical_button .button_c {
-}
+
 .contacts .vertical_button button {
 }
 .contacts .vertical_button span.phone_icon {
@@ -3285,8 +3312,14 @@ div.work_time {
     }
 }
 @media only screen and (max-width: 576px) and (min-width: 100px) {
+    .row_form{
+     margin:0 0 20px   
+    }
     form.budova_contact_form .col-md-9, form.budova_contact_form .col-md-3{
         padding: 0;
+    }
+    .officespage .panel.bordered, .newslooppage .panel.bordered{
+        border: 1px solid #e2e2e2;
     }
     .minihome{
         margin: 120px 0;
@@ -3603,6 +3636,10 @@ div.work_time {
         margin: 0;
         padding: 20px 12px;
     }
+    .home_advantages .related .el_card .panel{
+    margin: 0 auto;
+    transform: translateY(-20px);
+}
     .panel {
         padding: 20px 23px;
         margin: 0 13px;
@@ -3650,6 +3687,9 @@ div.work_time {
         -webkit-box-shadow: none;
         box-shadow: none;
     }
+    header.header.trans_300 .container .row{
+    border: none;
+}
     body.contacts {
         padding: 0;
     }
@@ -3855,7 +3895,14 @@ div.work_time {
         border: none;
     }
     .contacts .vertical_button {
-        display: none
+        /* display: none */
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: calc(50% - 90px);
+    }
+    div.contacts{
+        transform: translateY(50px);
     }
     a.show_all {
         display: block
@@ -3866,6 +3913,7 @@ div.work_time {
     .button_c {
         height: 50px;
     }
+    .contacts .vertical_button .button_c {width: 180px;}
     .cus .col-sm-6 {
         width: 50%;
     }
