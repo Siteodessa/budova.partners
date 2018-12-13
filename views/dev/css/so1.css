@@ -523,7 +523,7 @@ section {
 }
 .home {
     width: 100%;
-    height: 100vh;
+    height: 65vh;
 }
 .home_slider_container {
     width: 100%;
@@ -943,8 +943,9 @@ span.unbordered.bordereds {
     margin: 0;
 }
 body.new_houses h1, body.old_houses h1 {
-    margin: 20px auto 50px;
+    margin: 0px auto 0px;
     text-align: center;
+    padding-top: 0px;
 }
 .search_box {
     width: 100%;
@@ -1679,6 +1680,28 @@ iframe {
 /*********************************
 12. Call to Action 1
 *********************************/
+
+.planning_tab .panel {
+    margin: 0;
+    width: 100%;
+}
+
+
+.planning_tab  .panel_col.flex_col{
+    margin: 38px 0  0;
+}
+
+.planning_tab .tab-pane {
+    padding: 0px 0 50px;
+}
+
+.featured ul.nav.nav-pills li .circle {
+    transform: translateY(-9px);
+}
+
+.featured ul.nav.nav-pills li {
+    padding: 0 10px;
+}
 .cta_1 {
     padding-top: 64px;
     padding-bottom: 62px;
@@ -2671,8 +2694,8 @@ span.big.circle {
 }
 .planning_tab span.phone_icon {
     margin: 0;
-    height: 100%;
     width: 70px;
+    min-height: 100%;
 }
 .planning_tab span.phone_icon img {
     margin: 12px 27%;
@@ -2764,7 +2787,7 @@ span.blue.bold + p {
     background: none;
     background-size: cover;
     height: 450px;
-    margin-top: -250px;
+    margin-top: -100px;
 }
 .related.rlt {
     padding: 0px 0 0px;
@@ -2921,7 +2944,7 @@ span.block.indented {
     margin-left: 30px;
 }
 .featured ul.nav.nav-pills li:hover a {
-    color: #ffffff;
+    color: #295f95;
 }
 .featured ul.nav.nav-pills li {
 }
@@ -3439,9 +3462,13 @@ div.work_time {
     .home_slider_container .swiper-pagination-bullets {
         bottom: 10px !important;
     }
+    .singlepage .home_slider_container .swiper-pagination-bullets {
+        top: 35% !important;
+    }
     .text-center {
         text-align: left !important;
         text-indent: 20px;
+        margin: 0 0 20px;
     }
     .text-center:before {
         left: calc(15% - 26px);
@@ -3491,7 +3518,7 @@ div.work_time {
     .panel h4 {
         font-size: 20px;
     }
-    .planning_tab ul.nav.nav-pills li:first-child {
+    .planning_tab ul.nav.nav-pills li:first-child, .planning_tab ul.nav.nav-pills li:nth-of-type(2) , .planning_tab ul.nav.nav-pills li:nth-of-type(3) {
         opacity: 1 !important;
         height: auto !important;
         -webkit-transform: none !important;
@@ -3537,6 +3564,10 @@ div.work_time {
     .singlepage span.circle {
         top: 0px;
         left: -10px;
+    }
+    .singlepage .prices span.circle{
+        top: 0px;
+        left: -14px;
     }
     .home_advantages .prices span.phone_icon {
         font-size: 16px;
@@ -3605,14 +3636,15 @@ div.work_time {
     }
     ul.nav.nav-pills li {
         text-align: center;
-        width: 46%;
+        width: 49%;
         margin: 5px auto;
+        padding: 0 3px !important;
     }
     .planning_tab ul.nav.nav-pills li:hover {
         background: rgba(61, 133, 205, 0.7);
     }
     ul.nav.nav-pills {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
     }
     .planning_tab ul.nav.nav-pills {
@@ -3673,7 +3705,8 @@ div.work_time {
     }
     .singlepage .home_slider_container .swiper-slide.swiper-slide-active + div {
         width: 60vw !important;
-        margin: 10vh 0vw 0 -15vw !important;
+        margin: 3vh 0vw 0 -15vw !important;
+        border: none;
     }
     .singlepage .construction_slider .swiper-slide.swiper-slide-active + div {
         /* width: initial !important; */
@@ -3760,7 +3793,7 @@ div.work_time {
         font-size: 5vw;
     }
     .singlepage .related .section_title {
-        padding-top: 600px;
+        padding-top: 300px;
     }
     .advantages.adv h2 {
         text-align: center !important;
@@ -3905,7 +3938,8 @@ div.work_time {
         transform: translateY(50px);
     }
     a.show_all {
-        display: block
+        display: block;
+        margin: 12px 0  0;
     }
     .home_slider_container, .home {
         height: 50vh !important;
@@ -4032,3 +4066,4 @@ div.work_time {
 }
 @media only screen and (min-width: 1200px) and (max-width:5120) {
 }
+
