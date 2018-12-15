@@ -1,4 +1,4 @@
-<div class="row row_pros">
+<div class="row row_pros home_advantages">
     <div class="container">
     <div class="pros_tab">
       <div class="pros">
@@ -13,31 +13,31 @@ construct = []
 let homepageelem = content.filter(elem => elem.title.includes('Главная') )
 homepageelem.map(elem => construct = JSON.parse(elem.advantages) )
 } %>
-          <div class="col-md-6 row">
+          <div class="col-md-6">
             <span class="circle"></span>
               <span class=""><%= construct[0].text %></span>
           </div>
-          <div class="col-md-6 row">
+          <div class="col-md-6">
             <span class="circle"></span>
               <span class=""><%= construct[1].text %></span>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 row">
+          <div class="col-md-6">
             <span class="circle"></span>
               <span class=""><%= construct[2].text %></span>
           </div>
-          <div class="col-md-6 row">
+          <div class="col-md-6">
             <span class="circle"></span>
               <span class=""><%= construct[3].text %></span>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 row">
+          <div class="col-md-6">
             <span class="circle"></span>
               <span class=""><%= construct[4].text %></span>
           </div>
-          <div class="col-md-6 row">
+          <div class="col-md-6">
             <span class="circle"></span>
               <span class=""><%= construct[5].text %></span>
           </div>

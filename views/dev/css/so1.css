@@ -25,6 +25,16 @@ form#budova_contact_form .col-md-9 {
     display: block;
     width: 100%
 }
+.single_tab .swiper-pagination {
+    bottom: -20px;
+}
+
+.single_tab .swiper-pagination .swiper-pagination-bullet {
+    background: #3d85cd;
+}
+  .listings{
+        padding: 127px 0 0;
+    }
 .panel.bordered span.get_more {
     width: 100%;
     display: flex;
@@ -37,7 +47,9 @@ form#budova_contact_form .col-md-9 {
 .related .panel.bordered {
     background: #3c85cd;
 }
-
+.cus iframe {
+    height: 338px;
+}
 .related .panel.bordered h4, .related .panel.bordered span, .related .panel.bordered p, .related .panel.bordered a {
     color: #fff;
 }
@@ -307,7 +319,8 @@ a.show_all {
     color: #3d85cd !important;
     text-decoration: underline !important;
     font-size: 15px;
-    display: none;
+    display: block;
+    margin: 10px 0 0;
 }
 a.show_all i {
     font-size: 11px;
@@ -523,7 +536,7 @@ section {
 }
 .home {
     width: 100%;
-    height: 65vh;
+    height: 66vh;
 }
 .home_slider_container {
     width: 100%;
@@ -624,7 +637,7 @@ section {
     z-index: 15;
 }
 .header.scrolled {
-    height: 120px;
+    /* height: 120px; */
     /* background: #0e1d41; */
     border: none;
 }
@@ -784,10 +797,10 @@ body {
     transform: scale(1) translate(0%,0%);
 }
 div.single_tab {
-    padding: 120px 0 0;
+    padding: 20px 0 40px;
 }
 .minihome {
-    margin: 130px 0 0;
+    margin: 0;
 }
 header.header.trans_300 .container .row {
     border: 1px solid #eaeaea;
@@ -798,6 +811,13 @@ header.header.trans_300 .container .row {
 span svg {
     height: 25px;
     margin: 0 10px 0 0;
+}
+.planning_tab ul.nav.nav-pills li:first-child, .planning_tab ul.nav.nav-pills li:nth-of-type(2), .planning_tab ul.nav.nav-pills li:nth-of-type(3) {
+    opacity: 1 !important;
+    height: auto !important;
+    -webkit-transform: none !important;
+    -ms-transform: none !important;
+    transform: none !important;
 }
 .col-md-12 .el_card .image_c a {
     height: 100%;
@@ -913,7 +933,7 @@ span.unbordered.bordereds {
     transform: none;
 }
 .offices_advantages {
-    margin: 70px 0;
+    margin: 50px 0;
 }
 .contacts .row .percents .row {
     margin: 0;
@@ -942,10 +962,12 @@ span.unbordered.bordereds {
 .homepage .row.cols {
     margin: 0;
 }
-body.new_houses h1, body.old_houses h1 {
+body h1.section_title {
     margin: 0px auto 0px;
     text-align: center;
-    padding-top: 0px;
+    padding-top: 20px;
+    font-size: 1.8vw;
+    COLOR: rgb(165, 165, 165);
 }
 .search_box {
     width: 100%;
@@ -1467,6 +1489,13 @@ iframe {
     color: #FFFFFF;
     margin-top: 4px;
 }
+    .planning_tab .closed ul.nav.nav-pills li {
+        height: 0px;
+        opacity: 0;
+        -webkit-transform: translate(100%);
+        -ms-transform: translate(100%);
+        transform: translate(100%);
+    }
 .testimonials_slider .owl-dots {
     display: -ms-flexbox !important;
     display: flex !important;
@@ -1696,7 +1725,6 @@ iframe {
 }
 
 .featured ul.nav.nav-pills li .circle {
-    transform: translateY(-9px);
 }
 
 .featured ul.nav.nav-pills li {
@@ -1733,6 +1761,11 @@ iframe {
     position: relative;
     top: 5%;
 }
+
+.home_advantages .col-md-6 {
+    margin: 20px 0 20px;
+}
+
 .swiper-slide {
     height: 100%;
     text-align: center;
@@ -2441,9 +2474,11 @@ span.circle {
     -webkit-transition: .3s 0.2s;
     -o-transition: .3s 0.2s;
     transition: .3s 0.2s;
-    position: relative;
-    top: 10px;
-    left: -10px;
+    position: static;
+    margin: 6px;
+}
+.tab-pane .prices .row .col-md-6.col-sm-6:first-child, .installments_tab .col-md-6 {
+    display: flex;
 }
 .inline-flex {
     display: -ms-inline-flexbox;
@@ -2682,6 +2717,7 @@ span.big.circle {
     width: 100%;
     text-align: left;
     margin: 0 1vw;
+    display: flex;
 }
 .planning_tab button {
     height: -webkit-min-content;
@@ -2735,7 +2771,7 @@ span.big.circle {
 .button_c button {
     background: #3d85cd;
     color: #fff;
-    padding: 13px 63px 12px;
+    padding: 13px 25px 12px;
     border: none;
     height: 54px;
     font-size: 20px;
@@ -2848,14 +2884,14 @@ span.blue.bold + p {
     margin: 0 20px;
 }
 .col-md-4 .image_c {
-    height: 200px;
-    overflow: hidden;
+    height: 240px;
+    /* overflow: hidden; */
 }
 .image_c img {
     height: 100%;
 }
 .row.cols {
-    margin: 50px 0 0;
+    margin: 50px 0 30px;
 }
 .related .section_subtitle {
     max-width: 520px;
@@ -2914,7 +2950,7 @@ p.bordered-left {
     padding: 70px 0 70px;
 }
 .f_col {
-    margin: 30px 0 0;
+    margin: 20px 0 0;
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-pack: center;
@@ -2990,7 +3026,7 @@ li {
 .homepage .swiper-slide.swiper-slide-active + div img {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
-    transform: scale(1.954) translate(0%,4%);
+    transform: scale(1.668) translate(0.1%,5.3%);
     -webkit-transition: .4s;
     -o-transition: .4s;
     transition: .4s;
@@ -3000,6 +3036,7 @@ li {
     -webkit-filter: none;
     filter: none;
     margin-top: 0;
+    border: none;
 }
 .panel h4 {
     font-size: 14px;
@@ -3335,6 +3372,16 @@ div.work_time {
     }
 }
 @media only screen and (max-width: 576px) and (min-width: 100px) {
+    .home_advantages .col-md-6{
+        margin: 0px 0 24px;
+    }
+    .home_advantages .rows .row{
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .pros span{
+        font-size: 17px;
+    }
     .row_form{
      margin:0 0 20px   
     }
@@ -3345,7 +3392,7 @@ div.work_time {
         border: 1px solid #e2e2e2;
     }
     .minihome{
-        margin: 120px 0;
+        margin: 0;
     }
     .cus iframe {
         height: 100%;
@@ -3383,7 +3430,7 @@ div.work_time {
         position: static;
     }
     div.single_tab {
-        padding: 40px 0 0;
+        padding: 10px 0 0;
     }
     .construction {
         max-width: 90vw;
@@ -3487,10 +3534,10 @@ div.work_time {
         left: calc(50% - 9px);
     }
     .desc.text-center:before {
-        left: calc(50% - 9px);
+        left: calc(50% - 5px);
     }
     .desc.text-center:after {
-        left: calc(50% - 26px);
+        left: calc(50% + 5px);
     }
     .text-center:after {
         left: calc(15% - 9px);
@@ -3511,6 +3558,10 @@ div.work_time {
         display: block !important;
         max-width: 100vw;
     }
+    .construction_slider {
+    overflow: hidden;
+    padding: 30px 0 50px;
+}
     .plannimg, .plannimg img {
         padding: 0 0px;
         width: 100%;
@@ -3524,13 +3575,6 @@ div.work_time {
         -webkit-transform: none !important;
         -ms-transform: none !important;
         transform: none !important;
-    }
-    .planning_tab .closed ul.nav.nav-pills li {
-        height: 0px;
-        opacity: 0;
-        -webkit-transform: translate(100%);
-        -ms-transform: translate(100%);
-        transform: translate(100%);
     }
     .planning_tab {
         -ms-flex-direction: column;
@@ -3561,9 +3605,9 @@ div.work_time {
     mark, .prices span {
         font-size: 14px;
     }
-    .singlepage span.circle {
-        top: 0px;
-        left: -10px;
+    .prices .col-md-6 span.bold{
+        font-size: 14px;
+        padding: 2px 0;
     }
     .singlepage .prices span.circle{
         top: 0px;
@@ -3595,12 +3639,13 @@ div.work_time {
     .installments_tab .prices .rows .row {
         -ms-flex-direction: column !important;
         flex-direction: column !important;
+        padding: 0;
     }
     .rows.advs {
         margin: 80px 0 0;
     }
     .map .col-md-6.blueb {
-        padding: 0px 50px 40px;
+        padding: 30px 50px 40px;
     }
     .featured_row .tab-pane {
         padding: 0px 0 0px;
@@ -3678,6 +3723,8 @@ div.work_time {
     }
     .prices {
         margin: 0 13px;
+        padding: 20px 12px;
+        min-height: inherit !important;
     }
     .prices .col-md-6 {
         padding: 0;
@@ -3785,7 +3832,7 @@ div.work_time {
     .Cards .row, .Cards .container {
         max-width: 100vw;
         margin: 0;
-        padding: 0;
+        /* padding: 0; */
     }
     .houses_loop h2 {
         padding: 35px 0 0px !important;
@@ -3809,19 +3856,24 @@ div.work_time {
         padding: 0
     }
     .cus p span {
+    outline: none;
     }
     .cus h2.section_title {
         font-size: 4.7vw !important;
     }
     body.new_houses h1.text-center, body.old_houses h1.text-center {
     text-align: center !important;
-    font-size: 8vw !important;
+    font-size: 7vw !important;
     font-weight: bold;
     margin: 20px auto 30px;
     }
     .section_title, .section_title span {
         font-size: 5.6vw !important;
         text-align: center;
+    }
+    body.singlepage .section_title h3{
+        text-align: center;
+        text-indent: 0;
     }
     .cus .section_title {
         text-align: left !important;
@@ -3965,9 +4017,13 @@ div.work_time {
         padding-right: 0;
         padding: 9px 0;
     }
+    .listings{
+        padding: 127px 0 0;
+    }
 }
 @media only screen and (max-width: 768px) and (min-width: 576px) {
-    .cus .col-sm-6 {
+    .listings{
+        padding:140px 0 0;
     }
     .cardsearch input {
         width: 40vw;
@@ -4067,3 +4123,25 @@ div.work_time {
 @media only screen and (min-width: 1200px) and (max-width:5120) {
 }
 
+@media only screen and (min-width: 1100px) and (max-width:1440px) {
+    .home {
+    width: 100%;
+    height: 80vh;
+}
+
+.homepage .swiper-slide.swiper-slide-active + div img {
+    transform: scale(2.554) translate(0%,5.3%);
+
+}
+}
+
+
+
+.dd-header {
+    border-radius: 0px;
+}
+
+
+.pros span.circle {
+    transform: translate(0px, 4px);
+}

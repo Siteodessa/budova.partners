@@ -15,12 +15,10 @@
 <% include ../partials/head %>
 </head>
 <body  class="contacts">
-
   <header class="header trans_300">
   <% include ../partials/header %>
   </header>
-
-<div class="super_container">
+<div class="listings">
   		<div class="minihome"> </div>
 <div class="row row_contacts">
   <div class="container">
@@ -75,10 +73,6 @@
     </div>
     </div>
     <div class="col-md-6">
-
-
-
-
 <%- sitedata[0].contacts_page_about_map %>
     </div>
     </div>
@@ -87,19 +81,10 @@
   </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
 <div class="row row_form">
   <div class="container">
     <form id="budova_contact_form" class="budova_contact_form" action="post">
       <div class="row">
-
       <div class="col-md-3">
       <input id="budova_contact_form_name" class="budova_input_field budova_contact_form_name" type="text" placeholder="Имя*" required="required" data-error="Name is required.">
       <input id="budova_contact_form_subject" class="budova_input_field budova_contact_form_subject" type="text" placeholder="Телефон" required="required" data-error="Subject is required.">
@@ -110,35 +95,23 @@
     <button id="budova_contact_send_btn" type="submit" class="budova_contact_send_btn trans_200" value="Submit">Отправить</button>
     </div>
     </div>
-
     </form>
     </div>
 </div>
-
-
 	<div class="home_advantages">
 		<% include ../partials/home_advantages %>
 	</div>
-
-
 <div class="row_adv">
   <div class="advantages adv">
     <% include ../partials/advantages %>
   </div>
 </div>
-
 <div class="row_related">
   <div class="related rlt">
 		<% include ../partials/related %>
 	</div>
 </div>
-
-
-
 <% /* include ./old-contacts */ %>
-
-
-
   <div class="seobox seob">
 	<% include ../partials/seobox %>
 </div>
