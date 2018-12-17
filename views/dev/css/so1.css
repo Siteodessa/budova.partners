@@ -1764,6 +1764,7 @@ iframe {
 
 .home_advantages .col-md-6 {
     margin: 20px 0 20px;
+    display: flex;
 }
 
 .swiper-slide {
@@ -2180,7 +2181,7 @@ div {
 }
 .header_container {
     width: 100%;
-    height: 90px;
+    height: 80px;
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
@@ -3201,7 +3202,7 @@ div.contacts h2 {
 .contacts span.circle {
     width: 10px;
     height: 10px;
-    margin: 0;
+    margin: 8px;
 }
 .pros h2 span, .pros h2 {
     font-size: 30px;
@@ -3277,7 +3278,7 @@ div.contacts h2 {
 .col-md-12 .el_card {
     display: -ms-flexbox;
     display: flex;
-    margin: 20px 0;
+    margin: 0 0 20px;
 }
 .col-md-12 .el_card .panel.bordered {
     -webkit-transform: translate(0px, 0px);
@@ -4141,7 +4142,3 @@ div.work_time {
     border-radius: 0px;
 }
 
-
-.pros span.circle {
-    transform: translate(0px, 4px);
-}
