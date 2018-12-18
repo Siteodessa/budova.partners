@@ -13,7 +13,7 @@ html,body{height:100%}.layout-boxed html,.layout-boxed body{height:100%}body{fon
     color:  #fff;
     padding:  4px;
 }
-.db_group[name="social_infrastructure"]   .simple {
+.db_group[name="social_infrastructure"] .simple {
     padding: 17px;
 }
 .minigroups {

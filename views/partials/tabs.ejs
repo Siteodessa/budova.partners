@@ -2,8 +2,8 @@
 function remove_quotation_at_end(a){
   if (a[a.length - 1] === '"' || a[a.length - 1] === "'") return a.slice(0, -1)
 }
-
 %>
+
 
 <div class="container">
   <div class="row">
@@ -11,37 +11,30 @@ function remove_quotation_at_end(a){
       <div class="section_title text-center desc">
         <h3><%= d.title %></h3>
       </div>
-      <span class="section_subtitle"><%- remove_quotation_at_end(d.content) %></span>
     </div>
   </div>
   <div class="row featured_row">
-
     <div class="tab-content">
     </div>
-
-
       <% include ../partials/tabs/tab1 %>
-
-
       <% include ../partials/tabs/tab2 %>
-
-
       <% include ../partials/tabs/tab3 %>
-
       <% include ../partials/tabs/tab4 %>
-
+      <div itemprop="description" class="description" id="description">
+          <%- d.content %>
+    </div>
+    </div>
   </div>
+
 		</div>
 		</div>
     <script>
-$('.tab_active').ready(function(){
-    $('.tab_active').click()
-})
-
-
+      $('.tab_active').ready(function(){
+          $('.tab_active').click()
+      })
       $(document).on('click', '.single_navigation  a[href^="#"]', function (event) {
         event.preventDefault();
-console.log($($.attr(this, 'href')).offset().top);
+        console.log($($.attr(this, 'href')).offset().top);
         $('html, body').animate({
             scrollTop: ($($.attr(this, 'href')).offset().top - 120)
         }, 500);
