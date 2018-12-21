@@ -21,7 +21,24 @@ body.contacts {
     display: none;
     position: relative;
 }
+button.desktop.search {
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    background: #3d85cd;
+    border: 1px solid #eaeaea;
+    border-radius: 0px;
+    color: #fff;
+    cursor: pointer;
+}
 
+button.desktop.search img {
+    height: 45px;
+    padding: 14px 0;
+    width: auto;
+}
 .menu.menu_mm button {
     width: 30px;
     background: transparent;
@@ -37,7 +54,7 @@ body.contacts {
 }
 
 .homepage .swiper-slide.swiper-slide-active + div img {
-    transform: scale(2.554) translate(0%,5.3%);
+    transform: scale(1.84) translate(0%,5.3%);
 }
 }
 .dd-header {
@@ -60,6 +77,7 @@ div#menu3 {
 }
 div#stab_1 {
     padding-bottom: 0;
+    padding: 0;
 }
 #single_tab span.circle {
     margin: 0;
@@ -90,6 +108,13 @@ z-index:100
 right: -19px;
 }
 @media only screen and (max-width: 576px) and (min-width: 100px) {
+    .contacts_body {
+    transform: translate(0, 80px);
+}
+    .row.row_contacts {
+    margin-left: 0;
+    margin-right: 0;
+}
   .cus {
       background: rgb(41, 87, 132);
       padding: 30px 0 0px;
@@ -98,13 +123,17 @@ right: -19px;
     width: 50%;
 }
     .home_advantages .col-md-6{
-        margin: 0px 0 0px;
+        margin: 0px 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
     }
     .home_advantages .rows .row{
         margin-bottom: 0;
         margin-top: 0;
     }.contacts span.circle{
-    margin: 0  0 7px -5px;
+    margin: 0  0 0px -5px;
+    top: 0;
 }
     .pros span{
         font-size: 17px;
@@ -114,7 +143,7 @@ right: -19px;
     left: -5px;
 }
     .row_form{
-     margin:0 0 20px
+     margin: 30px 0 20px;
     }
     form.budova_contact_form .col-md-9, form.budova_contact_form .col-md-3{
         padding: 0;
@@ -155,7 +184,7 @@ right: -19px;
         width: 100%;
     }
     .featured_row {
-        padding-top: 24px;
+        padding-top: 24px !important;
     }
     .prices_button {
         position: static;
@@ -233,7 +262,7 @@ min-width: 100%;
         font-size: 20px;
     }
     .homepage .home_advantages .rows {
-        margin: 40px 0 15px;
+        margin: 40px 30px 15px;
     }
     .homepage .swiper-slide.swiper-slide-active + div {
         border: 0px solid #fff;
@@ -529,8 +558,8 @@ min-width: 100%;
         width: 40vw;
     }
     .col-md-6.cdata {
-        margin: 30px 0px 10px 20px;
-        padding: 0;
+        margin: 30px 0px 10px 0px;
+        padding: 20px 0 0 30px;
     }
     .cus h2:before,.cus h2:after {
         display: none
@@ -723,7 +752,7 @@ min-width: 100%;
         /* display: none */
         display: block;
         position: absolute;
-        top: 20px;
+        top: 50px;
         left: calc(50% - 90px);
     }
     div.contacts{
@@ -758,7 +787,7 @@ min-width: 100%;
         padding: 9px 0;
     }
     .listings{
-        padding: 127px 0 0;
+        padding: 137px 0 0;
     }
 }
 
@@ -766,4 +795,50 @@ min-width: 100%;
 iframe {
     width: 100%;
     height: 100%;
+}
+
+button.desktop.search:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.contacts_body h2 {padding: 0 10px;}
+
+.col-md-6.cdata {
+    margin: 20px 0;
+}
+
+.cdata div.messengers ul.flex {
+    margin: 20px 0;
+}
+
+.officespage .flex-col .row {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+
+.Cards .panel.bordered p {
+    padding: 0;
+}
+
+div#single_tab3 {
+    padding-bottom: 40px;
+}
+
+.single_tab .panel {
+    width: 100%;
+}
+
+.infrastructure iframe {
+    height: 450px;
+}
+
+.map .col-md-6.blueb {
+    padding: 118px 50px 10px;
+}
+
+.Cards .panel h4 {
+    font-size: 14px;
 }

@@ -1,4 +1,3 @@
-
 <% function check_structure(el) {
   if (el !== '' && typeof el !== 'undefined' && el !== '[{}]' && el !== '[]') {
     return true
@@ -46,36 +45,14 @@
   $('.panel.collapsable').toggleClass('closed')
   })
 </script>
-
-
-
-
-
-
-
 <link rel="stylesheet" href="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/css/lightgallery.css">
 <script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
 <script>
 var parent = '#lgallery';
 /* single mode , you must make a multi(slider) mode*/
-
 function make_light(parent) {
   jQuery(''+ parent +' img').each(function(){ var src = jQuery(this).attr('src'); jQuery(this).wrap('<p><a class="item" href="' + src + '"></a></p>') }); setTimeout(function(){ document.querySelectorAll(''+ parent +' p').forEach(function(element) { lightGallery(element); }); }, 10)
 }
-
 make_light(parent)
-
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
 <% }  }     catch (e) { console.log(e);}  %>

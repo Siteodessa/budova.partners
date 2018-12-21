@@ -3,8 +3,6 @@ function remove_quotation_at_end(a){
   if (a[a.length - 1] === '"' || a[a.length - 1] === "'") return a.slice(0, -1)
 }
 %>
-
-
 <div class="container">
   <div class="row">
     <div class="col">
@@ -25,13 +23,9 @@ function remove_quotation_at_end(a){
     </div>
     </div>
   </div>
-
 		</div>
 		</div>
     <script>
-      $('.tab_active').ready(function(){
-          $('.tab_active').click()
-      })
       $(document).on('click', '.single_navigation  a[href^="#"]', function (event) {
         event.preventDefault();
         console.log($($.attr(this, 'href')).offset().top);
