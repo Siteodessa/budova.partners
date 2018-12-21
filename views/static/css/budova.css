@@ -842,3 +842,18 @@ div#single_tab3 {
 .Cards .panel h4 {
     font-size: 14px;
 }
+
+@media only screen and (max-width: 1440px) and (min-width: 992px) {
+.home{
+    height: 76vh;
+}
+.homepage .swiper-slide.swiper-slide-active + div img{
+    
+transform: scale(2.84) translate(0%,5.3%);
+}
+}
+
+
+.homepage .swiper-slide.swiper-slide-active + div {
+    z-index: 9;
+}
