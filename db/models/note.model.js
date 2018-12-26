@@ -9,6 +9,7 @@ const NoteSchema = mongoose.Schema
     template_link:  { type: String, default: '', ru_label: 'Ссылка на шаблон', input_type: 'text', visibility:'hidden' },
     home_background : { type: String, note_type:["Объект", "Новость"], input_type: 'media', ru_label: 'Основное фото'},
     gallery: { type: String, default: '', ru_label: 'Галерея', input_type: 'multimedia', note_type:["Объект", "Страница"]},
+    seotext: { type: String, default: '', ru_label: 'Seo описание', input_type: 'texteditor', note_type:["Страница"]},
     subheading : { type: String, input_type: 'text' ,  ru_label: 'Подзаголовок', note_type:["Объект"]},
     prices_start_at : { type:  Number, input_type: 'text' ,ru_label:  'Цены от (Число)',note_type:["Объект"]},
     logo : { type: String, input_type: 'media', default: 'images/logo.png'},

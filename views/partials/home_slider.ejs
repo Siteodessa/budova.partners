@@ -21,7 +21,7 @@ function print_swiper_gallery(gallery_links_array) {
         let gallery_html = ''
         if (is_empty_or_undefined(gallery_links_array)) return false
         gallery_links_array.split(',').forEach(elem => {
-          gallery_html += '<div class="swiper-slide"><img src="/uploads/' + elem + '" /></div>'
+          gallery_html += '<div class="swiper-slide"><div class="parent_slide"><img src="/uploads/' + elem + '" /></div></div>'
         });
         return gallery_html
 }
@@ -36,9 +36,9 @@ function print_swiper_gallery(gallery_links_array) {
 <% }  else { %>
 <div class="swiper-container">
   <div class="swiper-wrapper">
-         <div class="swiper-slide"><img src="/images/1.jpg" /> </div>
-         <div class="swiper-slide"><img src="/images/2.jpg" /></div>
-         <div class="swiper-slide"><img src="/images/3.jpg" /></div>
+         <div class="swiper-slide"><div class="bad_parent"><img src="/images/1.jpg" /></div></div>
+         <div class="swiper-slide"><div class="bad_parent"><img src="/images/2.jpg" /></div></div>
+         <div class="swiper-slide"><div class="bad_parent"><img src="/images/3.jpg" /></div></div>
   </div>
   <div class="swiper-button-next"></div>
 <div class="swiper-button-prev"></div>

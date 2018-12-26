@@ -44,6 +44,10 @@ function handle_page_link(req) {
  page_link = remove_symbols(page_link);
  page_link = transliterate(page_link);
  page_link = remove_quotation_at_end(page_link);
+ page_link = page_link.replaceAll('"', '')
+ page_link = page_link.replaceAll("'", "")
+ page_link = page_link.replaceAll("«", "")
+ page_link = page_link.replaceAll("»", "")
  return page_link;
 }
 exports.upload = (req, res) => {

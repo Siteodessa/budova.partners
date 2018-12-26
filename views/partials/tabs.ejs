@@ -18,14 +18,28 @@ function remove_quotation_at_end(a){
       <% include ../partials/tabs/tab2 %>
       <% include ../partials/tabs/tab3 %>
       <% include ../partials/tabs/tab4 %>
-      <div itemprop="description" class="description" id="description">
+
+      <% let showmore; console.log(d.content.length ); if(d.content.length > 400 ) { showmore = 'true' }  else {  showmore  =   'false'} %>
+      <div itemprop="description" class="description  showmore <%- showmore %>" id="description">
           <%- d.content %>
+
+
     </div>
+    <% if(d.content.length > 400 ) {  %>
+
+<div class="show_more">
+<span class="show_more">Показать больше</span><i class="fa fa-arrow-down"></i>
+</div>
+
+<% } else { %>
+<%   %>
+<% } %>
     </div>
   </div>
 		</div>
 		</div>
     <script>
+      var offtop = $('#description').offset().top
       $(document).on('click', '.single_navigation  a[href^="#"]', function (event) {
         event.preventDefault();
         console.log($($.attr(this, 'href')).offset().top);
@@ -33,4 +47,21 @@ function remove_quotation_at_end(a){
             scrollTop: ($($.attr(this, 'href')).offset().top - 120)
         }, 500);
     });
+      $(document).on('click', 'div.show_more', function (event) {
+
+    $('html, body').animate({
+        scrollTop: offtop - 220
+    }, 500);
+
+
+
+      setTimeout(function () {
+  $('#description').toggleClass('open')
+}, 520)
+
+    });
+    console.log();
+if ($('#menu3 ul li').length < 4) {
+  $('a#show_all').css({"display":"none"})
+}
     </script>

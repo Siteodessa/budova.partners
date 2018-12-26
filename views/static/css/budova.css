@@ -54,7 +54,7 @@ button.desktop.search img {
 }
 
 .homepage .swiper-slide.swiper-slide-active + div img {
-    transform: scale(1.84) translate(0%,5.3%);
+    transform: scale(1.83) translate(0%,5.3%);
 }
 }
 .dd-header {
@@ -108,8 +108,13 @@ z-index:100
 right: -19px;
 }
 @media only screen and (max-width: 576px) and (min-width: 100px) {
+    .home_advantages{
+        
+margin: 0 10px;
+    }
     .contacts_body {
     transform: translate(0, 80px);
+    margin: 0 10px;
 }
     .row.row_contacts {
     margin-left: 0;
@@ -143,7 +148,7 @@ right: -19px;
     left: -5px;
 }
     .row_form{
-     margin: 30px 0 20px;
+     margin: 120px 10px 20px;
     }
     form.budova_contact_form .col-md-9, form.budova_contact_form .col-md-3{
         padding: 0;
@@ -280,12 +285,20 @@ min-width: 100%;
     }
     .text-center {
         text-align: left !important;
-        text-indent: 20px;
+        text-indent: 12px;
         margin: 0 0 20px;
     }
     .text-center:before {
         left: calc(50% + 11px);
     }
+
+    #menu2 .text-center:before{
+        
+left: calc(10% - 11px);
+    }
+    #menu2 .text-center:after {
+    left: calc(10% + 11px);
+}
     body.new_houses h1.text-center:before, body.old_houses h1.text-center:before{
         left: calc(50% + 11px);
     }
@@ -410,7 +423,7 @@ min-width: 100%;
         margin: 80px 0 0;
     }
     .map .col-md-6.blueb {
-        padding: 30px 50px 40px;
+        padding: 30px 50px 40px !important;
     }
     .featured_row .tab-pane {
         padding: 0px 0 0px;
@@ -506,6 +519,7 @@ min-width: 100%;
     .installments_tab .prices {
         padding: 27px 0 27px 9vw;
         margin: 0 auto;
+        min-width: 80%;
     }
     .cus ul.main_nav_list li img {
         display: none;
@@ -606,7 +620,8 @@ min-width: 100%;
         font-size: 5vw;
     }
     .singlepage .related .section_title {
-        padding-top: 300px;
+        padding-top: 0;
+        margin-top: -110px;
     }
     .advantages.adv h2 {
         text-align: center !important;
@@ -629,7 +644,7 @@ min-width: 100%;
     }
     body.new_houses h1.text-center, body h1.text-center {
     text-align: center !important;
-    font-size: 7vw !important;
+    font-size: 6vw !important;
     font-weight: bold;
     margin: 0px auto 20px;
     padding: 20px 0 0;
@@ -752,7 +767,7 @@ min-width: 100%;
         /* display: none */
         display: block;
         position: absolute;
-        top: 50px;
+        top: 20px;
         left: calc(50% - 90px);
     }
     div.contacts{
@@ -845,12 +860,23 @@ div#single_tab3 {
 
 @media only screen and (max-width: 1440px) and (min-width: 992px) {
 .home{
-    height: 76vh;
+    
+height: 76vh;
 }
+
+}
+
+@media only screen and (max-width: 1290px) and (min-width: 992px) {
 .homepage .swiper-slide.swiper-slide-active + div img{
     
 transform: scale(2.84) translate(0%,5.3%);
 }
+
+}@media only screen and (max-width: 1440px) and (min-width: 1290px) {
+.homepage .swiper-slide.swiper-slide-active + div img{
+    transform: scale(2.5) translate(0%,5.3%);
+}
+
 }
 
 
