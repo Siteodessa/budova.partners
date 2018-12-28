@@ -1,6 +1,4 @@
-
-
-
+<style> .module_missing { margin:0px; } @media only screen and (max-width: 576px) and (min-width: 100px){ .module_missing { margin: 150px; } } </style>
 <%
   function chunk(arr,n){
     var r = Array(Math.ceil(arr.length/n)).fill();
@@ -8,21 +6,20 @@
   }
   function test_infrastructure(chunked){
     if (chunked[7][2].text) {
-      console.log('WHY ', chunked[7][2].text);
+      // console.log('WHY ', chunked[7][2].text);
       return chunked
     }
     return false
   }
 
   try {
-    console.log('d["social_infrastructure"]', d["social_infrastructure"]);
+    // console.log('d["social_infrastructure"]', d["social_infrastructure"]);
     JSON.parse(d["social_infrastructure"].replaceAll('amp_symbol', '&'))
 
   let chunked = chunk(JSON.parse(d["social_infrastructure"].replaceAll('amp_symbol', '&')),3);
   %>
   <%- d.map_iframe.replace('width="600"', 'width="100%"') %>
   <% if (test_infrastructure(chunked)) { %>
-
 
 
 
@@ -63,5 +60,7 @@
 </div>
   <%   } %>
 
-  <%   } catch (err) { } %>
+  <%   } catch (err) {   %>
+<div class="module_missing"> </div>
+  <%      } %>
 <%   include ../partials/related  %>
